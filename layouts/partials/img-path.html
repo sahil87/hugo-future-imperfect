@@ -22,11 +22,11 @@
         {{ $.Scratch.Add "path" (lower (replace .LinkTitle " " "-")) }}
     {{ end }}
 {{ else if eq $path "date" }}
-    {{ $.Scratch.Set "path" "/img/" }}
+    {{ $.Scratch.Set "path" "/images/" }}
     {{ if eq $structType "shortcode" }}
-        {{ $.Scratch.Add "path" (.Page.Date.Format "2006/01") }}
+        {{ $.Scratch.Add "path" (.Page.Date.Format "2006") }}
     {{ else }}
-        {{ $.Scratch.Add "path" (.Date.Format "2006/01") }}
+        {{ $.Scratch.Add "path" (.Date.Format "2006") }}
     {{ end }}
 {{ else }}
     {{ $.Scratch.Set "path" $path }}
