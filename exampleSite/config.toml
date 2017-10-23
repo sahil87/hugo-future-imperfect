@@ -172,13 +172,13 @@ canonifyURLs = true
   xing             = ""
   slideshare       = ""
   # Social Networks
-  facebook         = "example"
-  googleplus       = ""
-  reddit           = "example"
-  quora            = ""
-  youtube          = ""
-  vimeo            = ""
-  whatsapp         = "" # WhatsApp Number
+  facebook        = "example"
+  googleplus      = ""
+  reddit          = "example"
+  quora           = ""
+  youtube         = ""
+  vimeo           = ""
+  whatsapp        = "" # WhatsApp Number
     # WeChat and QQ need testing.
     wechat         = ""
     qq             = "" # User ID Number
