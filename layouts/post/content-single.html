@@ -16,7 +16,9 @@
   <footer>
     {{ .Render "footer-category" }}
   </footer>
-  {{ template "_internal/disqus.html" . }}
+
+  {{ .Render "comments" }}
+
 </article>
 {{ .Render "comments" }}
 {{ .Render "prev-next" }}
