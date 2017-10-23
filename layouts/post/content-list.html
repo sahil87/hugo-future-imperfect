@@ -1,13 +1,7 @@
 <article class="post">
     {{ .Render "header" }}
     {{ .Render "featured" }}
-    <p>
-    {{if .Description }}
-        {{ printf "%s" .Description }}
-    {{ else }}
-        {{ printf "%s" .Summary | markdownify }}
-    {{ end }}
-    </p>
+    <p>{{ printf "%s" .Summary | markdownify }}</p>
 
     <footer>
         <ul class="actions">
