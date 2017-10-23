@@ -13,11 +13,10 @@
   <div id="content">
     {{ .Content }}
   </div>
-
   <footer>
     {{ .Render "footer-category" }}
   </footer>
-
+  {{ template "_internal/disqus.html" . }}
 </article>
 {{ .Render "comments" }}
 {{ .Render "prev-next" }}
